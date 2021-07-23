@@ -1,7 +1,7 @@
 package com.example.reqres;
 
-import com.example.reqres.model.Resource;
-import com.example.reqres.model.User;
+import com.example.reqres.models.Resource;
+import com.example.reqres.models.User;
 import com.example.reqres.repository.ResourceRepository;
 import com.example.reqres.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;

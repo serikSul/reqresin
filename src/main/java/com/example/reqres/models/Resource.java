@@ -1,6 +1,8 @@
-package com.example.reqres.model;
+package com.example.reqres.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
@@ -11,6 +13,8 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Resource {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,14 +24,4 @@ public class Resource {
     private String color;
     private String pantone_value;
 
-    public Resource(int id, int year, String name, String color, String pantone_value) {
-        this.id = id;
-        this.year = year;
-        this.name = name;
-        this.color = color;
-        this.pantone_value = pantone_value;
-    }
-
-    public Resource() {
-    }
 }

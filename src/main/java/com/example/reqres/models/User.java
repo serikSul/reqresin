@@ -1,6 +1,8 @@
-package com.example.reqres.model;
+package com.example.reqres.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
@@ -11,6 +13,8 @@ import javax.persistence.Id;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,14 +24,4 @@ public class User {
     private String last_name;
     private String avatar;
 
-    public User(int id, String email, String first_name, String last_name, String avatar) {
-        this.id = id;
-        this.email = email;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.avatar = avatar;
-    }
-
-    public User() {
-    }
 }

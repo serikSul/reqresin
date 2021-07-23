@@ -1,6 +1,6 @@
-package com.example.reqres.controller;
+package com.example.reqres.services;
 
-import com.example.reqres.model.Resource;
+import com.example.reqres.models.Resource;
 import com.example.reqres.repository.ResourceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
