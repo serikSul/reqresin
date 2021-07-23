@@ -1,4 +1,4 @@
-package com.example.reqres.services;
+package com.example.reqres.controllers;
 
 import com.example.reqres.models.Resource;
 import com.example.reqres.repository.ResourceRepository;
